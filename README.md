@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# React Assignment CW-05 - Produce Filter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey! This is my React project for the CW-05 assignment. It's a produce filtering app where you can search for fruits and vegetables and filter them by type. I built this to learn React components, state management, and how props work.
 
-## Available Scripts
+## Live Demo
+Check out my live app here: https://nazzz00.github.io/react-assignment/
 
-In the project directory, you can run:
+## What I Built
 
-### `npm start`
+This app has a few different components that all work together:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **HelloWorld** - Just a simple component that displays a heading. This was my first React component!
+- **Counter** - A counter that starts at 5 and increments when you click the button. This helped me understand state and setState().
+- **List** - Takes an array of items and displays them as a list using map(). Learned about props and keys here.
+- **FilteredList** - The main feature. It has a search bar AND a dropdown filter that work together. You can type to search produce names or filter by Fruit/Vegetables/All.
+- **App.js** - Brings everything together and holds the produce data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## The Produce Data
 
-### `npm test`
+I hardcoded some produce items to demonstrate filtering:
+- Apple (Fruit)
+- Banana (Fruit)  
+- Carrot (Vegetable)
+- Broccoli (Vegetable)
+- Orange (Fruit)
+- Spinach (Vegetable)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
+1. The counter shows 5 - click "Increment" to go up
+2. Type in the search box to filter produce by name
+3. Use the dropdown to show only Fruits, Vegetables, or everything
+4. The search and filter work together - it only shows items that match BOTH
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I added custom CSS with:
+- Variables for consistent colors and spacing
+- Hover effects on buttons and list items
+- A responsive layout that works on phone and desktop
+- Visual feedback when you hover and click
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What I Learned
 
-### `npm run eject`
+- **Components** - Breaking UI into reusable pieces makes everything cleaner
+- **State** - Using setState() instead of directly modifying state (important!)
+- **Props** - Passing data from parent to child components
+- **Filtering** - Using filter() and AND logic to combine search + dropdown
+- **Deployment** - Getting this on GitHub Pages was a struggle but I finally got it working!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Running This Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you want to run this on your computer:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Clone the repo
+git clone https://github.com/Nazzz00/react-assignment.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Go into the folder
+cd react-assignment
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install react-bootstrap (for the dropdown)
+npm install react-bootstrap bootstrap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the app
+npm start
